@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import lifecycle from './middleware/lifecycle.js'
+import lifecycle from '../middleware/lifecycle.js'
 
 const app = express()
 
@@ -19,6 +19,7 @@ app.use(lifecycle({
 }))
 
 // Feel free to use a router and move this elsewhere.
+// @ts-ignore
 app.get('/api', async (req, res) => {
   console.log(process.env.DATABASE_URL)
   res.json({ message: 'Hello World' })

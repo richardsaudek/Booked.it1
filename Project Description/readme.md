@@ -8,11 +8,21 @@
 
 - **_MVP:_** To be able to create, view and edit audition appointment listings.
 
-- **Post MVP:** Design and implement a front end!
+- **Post MVP:** Design and implement a front end! Add user authentication and the ability to upload photos.
 
 - **_Goals:_**
-  [ ] Create one model named 'Audtions'
-  [ ] Complete CRUD funtionality with RESTful routes
+<br>
+[x] Create one model named 'Audtions'
+<br>
+[ ] Complete CRUD funtionality with RESTful routes
 
 -**_Data Model:_**
 ![data-model](https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png)
+
+| Route  |  HTTP Method | DB Action  | Description  |
+|---|---|---|---|
+| /api/models/Audition_Info/:_id | GET  | INDEX  | Indexes all the submissions  |
+| /api/models/Audition_Info/:_id | POST | CREATE  | Create a submission  |
+| /api/models/Audition_Info/:_id | GET  | SHOW  | Show a single submission  |
+| /api/models/Audition_Info/:_id | PUT  | UPDATE  | Update a submission  |
+| /api/models/Audition_Info/:_id | DELETE | DELETE  | Delete a submission  |
