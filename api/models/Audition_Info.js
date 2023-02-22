@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from '../connection.js'
 
 const auditionSchema = new mongoose.Schema(
   {
@@ -13,8 +13,8 @@ const auditionSchema = new mongoose.Schema(
     casting_associate: String,
     prep: String,
     post_aud_notes: String
-  },
+  }
 )
 
-const Audition = mongoose.model('Audition', auditionSchema)
-export default Audition
+// const Audition = mongoose.model('Audition', auditionSchema)
+export default mongoose.model('Audition', auditionSchema)

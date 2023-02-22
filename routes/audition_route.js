@@ -1,12 +1,12 @@
 import { Router } from 'express'
-import * as controller from '../controller/audition_info'
+import * as controller from '../controller/audition_info.js'
 
 const router = Router()
 
 router.get('/api', controller.getAuditions)
-router.get('/api/_:id', controller.getAudition)
+router.get('/api/:id', controller.getAudition)
 router.post('/api', controller.createAudition)
-router.put('/api/_:id', controller.updateAudition)
-router.delete('/api/_:id', controller.deleteAudition)
+router.put('/api/:id', controller.updateAudition)
+router.delete('/api/:id', controller.deleteAudition)
 
 export default router

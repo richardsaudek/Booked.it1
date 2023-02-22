@@ -1,8 +1,15 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import lifecycle from '../middleware/lifecycle.js'
+import lifecycle from '/Users/richardsaudek/dev work/Booked.it1/api/middleware/lifecycle.js'
+import router from '../routes/audition_route.js'
 
 const app = express()
+
+const todoSchema = new mongoose.Schema({
+  text: String
+})
+
+const Todo = mongoose.model('Todo', todoSchema)
 
 app.use(lifecycle({
   async setup() {
@@ -18,12 +25,5 @@ app.use(lifecycle({
   }
 }))
 
-// Feel free to use a router and move this elsewhere.
-// @ts-ignore
-app.get('/api', async (req, res) => {
-  console.log(process.env.DATABASE_URL)
-  res.json({ message: 'Hello World' })
-})
-
-// Don't use app.listen. Instead export app.
+app.use(router)
 export default app

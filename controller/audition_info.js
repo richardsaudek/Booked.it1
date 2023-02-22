@@ -1,6 +1,7 @@
-import Audition_Info from '../api/models/Audition_Info'
+import Audition_Info from '../api/models/Audition_Info.js'
 
 export const getAuditions = async (req, res) => {
+  console.log('hello')
   try {
     const auditionJSON = await Audition_Info.find()
     res.json(auditionJSON)
@@ -60,4 +61,3 @@ export const deleteAudition = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
-

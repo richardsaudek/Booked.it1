@@ -1,12 +1,15 @@
 import 'dotenv/config'
-import mongoose from 'mongoose'
+import mongoose from '../api/connection.js'
 import data from './audition-info.json' assert { type: 'json' }
 import Audition from '../api/models/Audition_Info.js'
 
-mongoose.set('strictQuery', false)
+// await mongoose.connect(process.env.DATABASE_URL || '')
 
-await mongoose.connect(process.env.DATABASE_URL || '')
-
-await Audition.deleteMany()
-await Audition.insertMany(data)
+const insertData = async () => {
+  await Audition.deleteMany()
+  await Audition.insertMany(data)
+  let test = await Audition.find({})
+  console.log(test)
+}
+await insertData()
 await mongoose.disconnect()

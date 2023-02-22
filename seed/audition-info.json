@@ -1,5 +1,6 @@
 [
   {
+    "_id": "5a0fa4daae5bc100213c232e",
     "name_of_project": "Othello",
     "type_of_project": "Stage Production",
     "date": "2023-03-01",
@@ -10,5 +11,18 @@
     "casting_associate": "Kate Murray",
     "prep": "Please prepare pages 9-12",
     "post_aud_notes": "I should have done x y and z"
+  },
+  {
+    "_id": "4a0fa4daae5bc100213c232f",
+    "name_of_project": "The Blacklist",
+    "type_of_project": "Episodic",
+    "date": "2023-04-23",
+    "location": "Chelsea Piers",
+    "union_status": true ,
+    "casting_office": "Bonnie Finnegan",
+    "casting_dir": "Steven Jacobs",
+    "casting_associate": "Kate Murray",
+    "prep": "Chelsea Piers - Pier 60 - 11th Av btw 19th/20th Sts. Go through the glass double doors just north of the driveway/tunnel under the red awning and follow signs to 'Finnegan/Jacobs.",
+    "post_aud_notes": "Remember to call agent to talk about these kind of contracts."
   }
 ]
