@@ -16,7 +16,7 @@
 <br>
 [ ] Complete CRUD funtionality with RESTful routes
 
--**_Data Model:_**
+- **_Data Model:_**
 ![data-model](https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png)
 
 | Route  |  HTTP Method | DB Action  | Description  |
