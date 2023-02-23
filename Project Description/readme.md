@@ -19,10 +19,10 @@
 - **_Data Model:_**
 ![data-model](https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png)
 
-| Route  |  HTTP Method | DB Action  | Description  |
-|---|---|---|---|
-| /api/models/Audition_Info/:id | GET  | INDEX  | Indexes all the submissions  |
-| /api/models/Audition_Info/:id | POST | CREATE  | Create a submission  |
-| /api/models/Audition_Info/:id | GET  | SHOW  | Show a single submission  |
-| /api/models/Audition_Info/:id | PUT  | UPDATE  | Update a submission  |
-| /api/models/Audition_Info/:id | DELETE | DELETE  | Delete a submission  |
+| Route                         | HTTP Method | DB Action | Description                 |
+| ----------------------------- | ----------- | --------- | --------------------------- |
+| /api/models/Audition_Info/:id | GET         | INDEX     | Indexes all the submissions |
+| /api/models/Audition_Info/:id | POST        | CREATE    | Create a submission         |
+| /api/models/Audition_Info/:id | GET         | SHOW      | Show a single submission    |
+| /api/models/Audition_Info/:id | PATCH       | UPDATE    | Update a submission         |
+| /api/models/Audition_Info/:id | DELETE      | DELETE    | Delete a submission         |

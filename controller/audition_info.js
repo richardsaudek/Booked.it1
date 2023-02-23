@@ -1,3 +1,4 @@
+import mongoose from 'mongoose'
 import Audition_Info from '../api/models/Audition_Info.js'
 
 export const getAuditions = async (req, res) => {
@@ -36,15 +37,19 @@ export const createAudition = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
-export const updateAudition = async (req, res) => {
-  
-  const oldTitle = req.body.old_title
-  const newTitle = req.body.new_title
-
+/** Makes mongoose happy */
+export function parseObjectId(id) {
   try {
+    return new mongoose.Types.ObjectId(id)
+  } catch (error) {
+    return null
+  }
+}
 
-    const auditionJSON = await Audition_Info.findOneAndUpdate({ name_of_project: oldTitle }, { $set: { name_of_project: newTitle } },
-      { new: true })
+export const updateAudition = async (req, res) => {
+  try {
+    const id = req.params.id   
+    const auditionJSON = await Audition_Info.findByIdAndUpdate({ _id: id }, req.body, { new: true })
 
     res.status(201).json(auditionJSON)
   } catch (error) {

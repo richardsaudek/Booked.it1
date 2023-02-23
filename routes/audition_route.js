@@ -6,7 +6,7 @@ const router = Router()
 router.get('/api', controller.getAuditions)
 router.get('/api/:id', controller.getAudition)
 router.post('/api', controller.createAudition)
-router.put('/api', controller.updateAudition)
+router.patch('/api/:id', controller.updateAudition)
 router.delete('/api/:id', controller.deleteAudition)
 
 export default router

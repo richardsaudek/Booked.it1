@@ -29,12 +29,12 @@ Content-Type: application/json
   }
  
 ###
-PUT {{baseUrl}}
+PATCH {{baseUrl}}/63f79af8f9db7c96c92e8348
 Content-Type: application/json
 
  {
-    "old_title" : "Othello",
-    "new_title": "Change a Name"
+    "name_of_project" : "New Edit",
+    "location" : "New Location"
   }
 ###
 
