@@ -3,7 +3,7 @@ import mongoose from '../connection.js'
 const auditionSchema = new mongoose.Schema(
   {
     name_of_project: {
-      type: String, default: 'Title of Show'
+      type: String, default: 'Project'
     },
     type_of_project: {
       type: String, default: 'Type of Project'

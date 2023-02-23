@@ -28,7 +28,7 @@ export const getAudition = async (req, res) => {
 export const createAudition = async (req, res) => {
   try {
     console.log('I was called')
-    const auditionJSON = await Audition_Info.create(req.body)
+    const auditionJSON = await Audition_Info.create(req.params)
     console.log(auditionJSON)
     res.status(201).json(auditionJSON)
   } catch (error) {
@@ -37,9 +37,15 @@ export const createAudition = async (req, res) => {
   }
 }
 export const updateAudition = async (req, res) => {
+  
+  const oldTitle = req.body.old_title
+  const newTitle = req.body.new_title
+
   try {
-    const { id } = req.params
-    const auditionJSON = await Audition_Info.findByIdAndUpdate(id, req.body)
+
+    const auditionJSON = await Audition_Info.findOneAndUpdate({ name_of_project: oldTitle }, { $set: { name_of_project: newTitle } },
+      { new: true })
+
     res.status(201).json(auditionJSON)
   } catch (error) {
     console.error(error)

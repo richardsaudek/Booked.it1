@@ -29,20 +29,12 @@ Content-Type: application/json
   }
  
 ###
-PUT {{baseUrl}}/63f67ba9bf990db46316fc1c
+PUT {{baseUrl}}
 Content-Type: application/json
 
  {
-    "name_of_project": "Edit 1",
-    "type_of_project": "Edit 2",
-    "date": "Edit 3",
-    "location": "Edit 4",
-    "union_status": true ,
-    "casting_office": "Edit 5",
-    "casting_dir": "Edit 6",
-    "casting_associate": "Edit 7",
-    "prep": "Edit 8",
-    "post_aud_notes": "Edit 9"
+    "old_title" : "Othello",
+    "new_title": "Change a Name"
   }
 ###
 
