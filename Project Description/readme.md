@@ -21,8 +21,8 @@
 
 | Route  |  HTTP Method | DB Action  | Description  |
 |---|---|---|---|
-| /api/models/Audition_Info/:_id | GET  | INDEX  | Indexes all the submissions  |
-| /api/models/Audition_Info/:_id | POST | CREATE  | Create a submission  |
-| /api/models/Audition_Info/:_id | GET  | SHOW  | Show a single submission  |
-| /api/models/Audition_Info/:_id | PUT  | UPDATE  | Update a submission  |
-| /api/models/Audition_Info/:_id | DELETE | DELETE  | Delete a submission  |
+| /api/models/Audition_Info/:id | GET  | INDEX  | Indexes all the submissions  |
+| /api/models/Audition_Info/:id | POST | CREATE  | Create a submission  |
+| /api/models/Audition_Info/:id | GET  | SHOW  | Show a single submission  |
+| /api/models/Audition_Info/:id | PUT  | UPDATE  | Update a submission  |
+| /api/models/Audition_Info/:id | DELETE | DELETE  | Delete a submission  |

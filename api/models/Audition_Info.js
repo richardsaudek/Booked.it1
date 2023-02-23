@@ -1,18 +1,35 @@
 import mongoose from '../connection.js'
-
+//set defaults 
 const auditionSchema = new mongoose.Schema(
   {
-    _id: String,
-    name_of_project: String,
-    type_of_project: String,
-    date: String,
-    location: String,
+    name_of_project: {
+      type: String, default: 'Title of Show'
+    },
+    type_of_project: {
+      type: String, default: 'Type of Project'
+    },
+    date: {
+      type: String, default: 'Date'
+    },
+    location: {
+      type: String, default: 'Address'
+    },
     union_status: Boolean,
-    casting_office: String,
-    casting_dir: String,
-    casting_associate: String,
-    prep: String,
-    post_aud_notes: String
+    casting_office: {
+      type: String, default: 'Enter the Casting Office'
+    },
+    casting_dir: {
+      type: String, default: 'Who is the CD?'
+    },
+    casting_associate: {
+      type: String, default: 'Who is the Casting Associate?'
+    },
+    prep: {
+      type: String, default: 'What do you need to prepare?'
+    },
+    post_aud_notes: {
+      type: String, default: 'How did it go?'
+    }
   }
 )
 

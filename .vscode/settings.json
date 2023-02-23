@@ -6,8 +6,5 @@
     "vercel": {
       "host": "https://booked-it.vercel.app",
     },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
   }
 }

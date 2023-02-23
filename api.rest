@@ -15,52 +15,38 @@ GET {{baseUrl}}
 POST {{baseUrl}}
 Content-Type: application/json
 
- {
-    "_id": "5a0fa4daae5bc100213c232e",
-    "name_of_project": "Othello",
-    "type_of_project": "Stage Production",
-    "date": "2023-03-01",
-    "location": "Ripley Grier",
+  {
+    "name_of_project": "Edit 1",
+    "type_of_project": "Edit 2",
+    "date": "Edit 3",
+    "location": "Edit 4",
     "union_status": true ,
-    "casting_office": "Telsey",
-    "casting_dir": "Jordan Thaler",
-    "casting_associate": "Kate Murray",
-    "prep": "Please prepare pages 9-12",
-    "post_aud_notes": "I should have done x y and z"
+    "casting_office": "Edit 5",
+    "casting_dir": "Edit 6",
+    "casting_associate": "Edit 7",
+    "prep": "Edit 8",
+    "post_aud_notes": "Edit 9"
   }
-
+ 
 ###
-PUT {{baseUrl}}/5a0fa4daae5bc100213c232e
+PUT {{baseUrl}}/63f67ba9bf990db46316fc1c
 Content-Type: application/json
 
  {
-    "name_of_project": "Edit",
-    "type_of_project": "Stage Production",
-    "date": "2023-03-01",
-    "location": "Ripley Grier",
+    "name_of_project": "Edit 1",
+    "type_of_project": "Edit 2",
+    "date": "Edit 3",
+    "location": "Edit 4",
     "union_status": true ,
-    "casting_office": "Telsey",
-    "casting_dir": "Jordan Thaler",
-    "casting_associate": "Kate Murray",
-    "prep": "Please prepare pages 9-12",
-    "post_aud_notes": "I should have done x y and z"
+    "casting_office": "Edit 5",
+    "casting_dir": "Edit 6",
+    "casting_associate": "Edit 7",
+    "prep": "Edit 8",
+    "post_aud_notes": "Edit 9"
   }
-  ####
+###
 
-DELETE {{baseUrl}}
+DELETE {{baseUrl}}/63f67c18c30b4d7888926f48
 Content-Type: application/json 
 
-  {
-    "_id": "5a0fa4daae5bc100213c232e",
-    "name_of_project": "Othello",
-    "type_of_project": "Stage Production",
-    "date": "2023-03-01",
-    "location": "Ripley Grier",
-    "union_status": true ,
-    "casting_office": "Telsey",
-    "casting_dir": "Jordan Thaler",
-    "casting_associate": "Kate Murray",
-    "prep": "Please prepare pages 9-12",
-    "post_aud_notes": "I should have done x y and z"
-  }
-  ###
+###

@@ -4,12 +4,7 @@ import lifecycle from '/Users/richardsaudek/dev work/Booked.it1/api/middleware/l
 import router from '../routes/audition_route.js'
 
 const app = express()
-
-const todoSchema = new mongoose.Schema({
-  text: String
-})
-
-const Todo = mongoose.model('Todo', todoSchema)
+app.use(express.json())
 
 app.use(lifecycle({
   async setup() {

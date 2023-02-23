@@ -27,9 +27,10 @@ export const getAudition = async (req, res) => {
 }
 export const createAudition = async (req, res) => {
   try {
-    const auditionJSON = new Audition_Info(req.body)
-    await auditionJSON.save()
-    res.status(201).json(Audition_Info)
+    console.log('I was called')
+    const auditionJSON = await Audition_Info.create(req.body)
+    console.log(auditionJSON)
+    res.status(201).json(auditionJSON)
   } catch (error) {
     console.error(error)
     res.status(500).json({ error: error.message })
@@ -52,10 +53,10 @@ export const deleteAudition = async (req, res) => {
     const deleted = await Audition_Info.findByIdAndDelete(id)
 
     if (deleted) {
-      return res.status(200).send('Submission deleted!')
+      return res.status(200).send('Submission deleted. Go get lunch instead!')
     }
 
-    throw new Error('Submission not found')
+    throw new Error('Yikes! An error has occured!')
   } catch (error) {
     console.error(error)
     res.status(500).json({ error: error.message })
