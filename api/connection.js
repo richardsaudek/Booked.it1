@@ -1,6 +1,6 @@
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 
-mongoose.set('strictQuery', false)
-mongoose.connect('mongodb://localhost/auditions')
+// mongoose.set('strictQuery', false)
+// mongoose.connect('mongodb://localhost/auditions')
 
-export default mongoose
+// export default mongoose

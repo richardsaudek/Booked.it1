@@ -1,5 +1,5 @@
-import mongoose from '../connection.js'
-//set defaults 
+import mongoose from 'mongoose'
+
 const auditionSchema = new mongoose.Schema(
   {
     name_of_project: {
@@ -34,4 +34,4 @@ const auditionSchema = new mongoose.Schema(
     }
   }
 )
-export default mongoose.model('Audition', auditionSchema)
+export default mongoose.model('Audition_Info', auditionSchema)

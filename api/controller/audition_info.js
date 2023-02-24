@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import Audition_Info from '../api/models/Audition_Info.js'
+import Audition_Info from '../models/Audition_Info.js'
 
 export const getAuditions = async (req, res) => {
   try {
