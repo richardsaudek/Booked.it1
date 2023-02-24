@@ -29,17 +29,25 @@ I'm making my own! In the final product, the user will generate the API for them
 - **_API Snippet:_** N/A
 
 # MVP:
-To be able to create, view and edit audition appointment listings.
+- [x] Build a JSON API using Mongoose and Express
+- [x] Achieve complete CRUD functionality implemented with RESTful routes
+- [ ] Deploy via Vercel 
 
 # Post MVP:
-Design and implement a front end! Add user authentication and the ability to upload photos.
+- [ ] Design a frontend
+- [ ] Add user authentication
+- [ ] Create ability to upload headshots
+- [ ] Address link to gmaps 
+
 
 # Goals:
 
 - [x] Create model for Audtions
 - [x] Complete CRUD funtionality with RESTful routes
-  - [ ] GET funtion to index all submissions
-  - [ ] 
+  - [x] GET function to index all submissions
+  - [x] POST function to create new submission
+  - [x] PATCH function to edit one or more fields
+  - [x] DELETE function to delete submission(s)
   
 <br>
 
