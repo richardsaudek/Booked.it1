@@ -1,6 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import lifecycle from '/Users/richardsaudek/dev work/Booked.it1/api/middleware/lifecycle.js'
+import lifecycle from './middleware/lifecycle.js'
 import router from './routes/audition_route.js'
 
 const app = express()

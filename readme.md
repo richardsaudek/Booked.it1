@@ -19,9 +19,15 @@
 
 # Description
 
-<strong>BookIt</strong> allows actors to create a detailed contact list of industry professionals who they've met and auditioned for. 
-<strong>BookIt</strong> works as a rolodex of past and upcoming appointments, noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people and maintain relationships. 
-<strong>BookIt</strong> also offers the artist to manage their preperation for the appointment as well a space to reflect on how it went.
+<details> 
+<summary>👇 <strong>BookIt</strong> allows industry professionals to...</summary>
+
+>create a detailed contact list of industry professionals who they've met and auditioned for. <br>
+<hr>
+><strong>BookIt</strong> works as a rolodex of past and upcoming appointments, noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people to maintain professional relationships. <br>
+
+><strong>BookIt</strong> also offers the artist to manage their preperation for the appointment as well a space to reflect on how it went.
+
 
 # API: 
 I'm making my own! In the final product, the user will generate the API for themselves.
