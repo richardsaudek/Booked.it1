@@ -1,4 +1,4 @@
-import { Router } from 'express'
+import Router from 'express'
 import * as controller from '../controller/audition_info.js'
 
 const router = Router()

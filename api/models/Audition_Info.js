@@ -14,7 +14,9 @@ const auditionSchema = new mongoose.Schema(
     location: {
       type: String, default: 'Address'
     },
-    union_status: Boolean,
+    union_status: {
+      type: Boolean, default: null
+    },
     casting_office: {
       type: String, default: 'Enter the Casting Office'
     },

@@ -1,4 +1,25 @@
-- **_App Title:_** BookIt
+![alt text](https://github.com/richardsaudek/Booked.it1/blob/main/Project%20Description/BookIt%20b%26w.png"BookIt! Logo")
+# BookIt!
+
+## Description:
+**BookIt** is an app for performing artists navigating through the busy process of auditioning for roles. 
+
+**BookIt** allows actors to create a detailed contact list of industry professionals who they've met and auditioned for. The app also works as a rolodex of past and upcoming appointments, noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people and maintain relationships. **BookIt** also offers the artist to manage their preperation for the appointment as well a space to reflect on how it went.
+***
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
+
+
 
 - **_App Description_**: BookIt is an app for performing artists navigating through the busy process of auditioning for roles. BookIt allows actors to create a detailed contact list of industry professionals who they've met and auditioned for. The app also works as a rolodex of past and upcoming appointments, noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people and maintain relationships. BookIt also offers the artist to manage their preperation for the appointment as well a space to reflect on how it went.
 

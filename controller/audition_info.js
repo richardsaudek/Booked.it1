@@ -2,7 +2,6 @@ import mongoose from 'mongoose'
 import Audition_Info from '../api/models/Audition_Info.js'
 
 export const getAuditions = async (req, res) => {
-  console.log('hello')
   try {
     const auditionJSON = await Audition_Info.find()
     res.json(auditionJSON)
@@ -28,8 +27,7 @@ export const getAudition = async (req, res) => {
 }
 export const createAudition = async (req, res) => {
   try {
-    console.log('I was called')
-    const auditionJSON = await Audition_Info.create(req.params)
+    const auditionJSON = await Audition_Info.create(req.body)
     console.log(auditionJSON)
     res.status(201).json(auditionJSON)
   } catch (error) {
@@ -64,7 +62,7 @@ export const deleteAudition = async (req, res) => {
     const deleted = await Audition_Info.findByIdAndDelete(id)
 
     if (deleted) {
-      return res.status(200).send('Submission deleted. Go get lunch instead!')
+      return res.status(200).send('Submission deleted. Screw work. Go get lunch instead!')
     }
 
     throw new Error('Yikes! An error has occured!')

@@ -16,20 +16,20 @@ POST {{baseUrl}}
 Content-Type: application/json
 
   {
-    "name_of_project": "Edit 1",
-    "type_of_project": "Edit 2",
-    "date": "Edit 3",
-    "location": "Edit 4",
-    "union_status": true ,
-    "casting_office": "Edit 5",
-    "casting_dir": "Edit 6",
-    "casting_associate": "Edit 7",
-    "prep": "Edit 8",
-    "post_aud_notes": "Edit 9"
+    "name_of_project": "Death Note",
+    "type_of_project": "Episodic",
+    "date": "3-03-2023",
+    "location": "Pearl Studios",
+    "union_status": "true",
+    "casting_office": "Netflix",
+    "casting_dir": "Manny Frampton",
+    "casting_associate": "Martha Goodman",
+    "prep": "pages 4-8",
+    "post_aud_notes": "It went well! "
   }
  
 ###
-PATCH {{baseUrl}}/63f79af8f9db7c96c92e8348
+PATCH {{baseUrl}}/63f8c360344fddcb3db03622
 Content-Type: application/json
 
  {
