@@ -34,6 +34,4 @@ const auditionSchema = new mongoose.Schema(
     }
   }
 )
-
-// const Audition = mongoose.model('Audition', auditionSchema)
 export default mongoose.model('Audition', auditionSchema)

@@ -15,7 +15,6 @@
 **[MVP](#mvp)**<br>
 **[Data Model](#data-model)**<br>
 **[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Building the Extension Bundles](#building-the-extension-bundles)**<br>
 **[Next Steps, Credits, Feedback, License](#next-steps)**<br>
 
 # Description
@@ -37,8 +36,10 @@ Design and implement a front end! Add user authentication and the ability to upl
 
 # Goals:
 
-- [x] Create one model named 'Audtions'
+- [x] Create model for Audtions
 - [x] Complete CRUD funtionality with RESTful routes
+  - [ ] GET funtion to index all submissions
+  - [ ] 
   
 <br>
 
@@ -60,40 +61,18 @@ Design and implement a front end! Add user authentication and the ability to upl
 ```var s = "JavaScript syntax highlighting";
 const auditionSchema = new mongoose.Schema(
   {
-    name_of_project: {
-      type: String, default: 'Project'
-    },
-    type_of_project: {
-      type: String, default: 'Type of Project'
-    },
-    date: {
-      type: String, default: 'Date'
-    },
-    location: {
-      type: String, default: 'Address'
-    },
-    union_status: {
-      type: Boolean, default: null
-    },
-    casting_office: {
-      type: String, default: 'Enter the Casting Office'
-    },
-    casting_dir: {
-      type: String, default: 'Who is the CD?'
-    },
-    casting_associate: {
-      type: String, default: 'Who is the Casting Associate?'
-    },
-    prep: {
-      type: String, default: 'What do you need to prepare?'
-    },
-    post_aud_notes: {
-      type: String, default: 'How did it go?'
-    }
+    name_of_project: String,
+    type_of_project: String,
+    date: String,
+    location: String,
+    union_status: Boolean,
+    casting_office: String,
+    casting_dir: String,
+    casting_associate: String,
+    prep: String,
+    post_aud_notes: String
   }
 )
-
-// const Audition = mongoose.model('Audition', auditionSchema)
 export default mongoose.model('Audition', auditionSchema)```
 
 

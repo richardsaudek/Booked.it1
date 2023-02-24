@@ -1,1 +1,15 @@
-{"projectId":"prj_SOXRng5VWKFGTybCFY8d8NbbYy1c","orgId":"I9BDpiEzDNgGvDl1RAZlNl03"}
+{
+  "projectId": "prj_SOXRng5VWKFGTybCFY8d8NbbYy1c",
+  "orgId": "I9BDpiEzDNgGvDl1RAZlNl03",
+  "settings": {
+    "createdAt": 1676989004704,
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "18.x"
+  }
+}

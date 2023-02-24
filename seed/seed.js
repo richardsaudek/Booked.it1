@@ -6,7 +6,7 @@ import Audition from '../api/models/Audition_Info.js'
 // await mongoose.connect(process.env.DATABASE_URL || '')
 
 const insertData = async () => {
-  await Audition.deleteMany()
+  await Audition.deleteMany({})
   await Audition.insertMany(data)
   let test = await Audition.find({})
   console.log(test)
