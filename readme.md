@@ -10,44 +10,53 @@
 
 
 ### Table of Contents:
-**[Descrition](#description)**<br>
+**[Description](#description)**<br>
 **[API](#api)**<br>
 **[MVP](#mvp)**<br>
+**[Post- MVP](#post-mvp)**<br>
+**[Goals](#goals)**<br>
+**[Routing Table](#routing-table)**<br>
 **[Data Model](#data-model)**<br>
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
+**[Schema](#schema)**<br>
+<br>
+
 
 # Description
 
-<details> 
-<summary>👇 <strong>BookIt</strong> allows industry professionals to...</summary>
+### <strong>BookIt</strong> allows industry professionals to:
+<br>
 
->create a detailed contact list of industry professionals who they've met and auditioned for. <br>
+>👉 create a detailed contact list of industry professionals who they've met and auditioned for. <br>
 <hr>
-><strong>BookIt</strong> works as a rolodex of past and upcoming appointments, noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people to maintain professional relationships. <br>
 
-><strong>BookIt</strong> also offers the artist to manage their preperation for the appointment as well a space to reflect on how it went.
+>👉 keep track of past and upcoming appointments noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people to maintain professional relationships. <br>
 
+>👉 manage any preperation for the appointment as well a space to reflect on how it went.
+<br>
+<br>
 
-# API: 
-I'm making my own! In the final product, the user will generate the API for themselves.
+## API: 
+***
+I'm making some sample JSON models, but in the final product, the user will generate the API themselves.
+<br>
+<br>
 
-- **_API Snippet:_** N/A
-
-# MVP:
+## MVP:
+***
 - [x] Build a JSON API using Mongoose and Express
 - [x] Achieve complete CRUD functionality implemented with RESTful routes
 - [ ] Deploy via Vercel 
 
-# Post MVP:
+## Post MVP:
+***
 - [ ] Design a frontend
 - [ ] Add user authentication
 - [ ] Create ability to upload headshots
 - [ ] Address link to gmaps 
 
 
-# Goals:
-
+## Goals:
+***
 - [x] Create model for Audtions
 - [x] Complete CRUD funtionality with RESTful routes
   - [x] GET function to index all submissions
@@ -57,12 +66,8 @@ I'm making my own! In the final product, the user will generate the API for them
   
 <br>
 
-# Data Model:
-
-<img src="https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png?raw=true" alt="BookIt's data model"/>
-</p>
-
-
+## Routing Table:
+***
 | Route                         | HTTP Method | DB Action | Description                 |
 | ----------------------------- | ----------- | --------- | --------------------------- |
 | /api/models/Audition_Info/:id | GET         | INDEX     | Indexes all the submissions |
@@ -70,6 +75,15 @@ I'm making my own! In the final product, the user will generate the API for them
 | /api/models/Audition_Info/:id | GET         | SHOW      | Show a single submission    |
 | /api/models/Audition_Info/:id | PATCH       | UPDATE    | Update a submission         |
 | /api/models/Audition_Info/:id | DELETE      | DELETE    | Delete a submission         |
+## Data Model:
+***
+<p align="center">
+
+<img src="https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png?raw=true" alt="BookIt's data model"/>
+</p>
+
+## Schema:
+***
 
 
 ```var s = "JavaScript syntax highlighting";
@@ -88,5 +102,3 @@ const auditionSchema = new mongoose.Schema(
   }
 )
 export default mongoose.model('Audition', auditionSchema)```
-
-
