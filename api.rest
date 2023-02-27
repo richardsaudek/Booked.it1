@@ -29,7 +29,7 @@ Content-Type: application/json
   }
  
 ###
-PATCH {{baseUrl}}/63f8c360344fddcb3db03622
+PATCH {{baseUrl}}/
 Content-Type: application/json
 
  {
@@ -38,7 +38,7 @@ Content-Type: application/json
   }
 ###
 
-DELETE {{baseUrl}}/63f67c18c30b4d7888926f48
+DELETE {{baseUrl}}/
 Content-Type: application/json 
 
 ###

@@ -9,13 +9,11 @@ app.use(express.json())
 app.use(lifecycle({
   async setup() {
     console.log('Before handler')
-    // Put your database connection here. e.g.
     // @ts-ignore
     await mongoose.connect(process.env.DATABASE_URL)
   },
   async cleanup() {
     console.log('After handler')
-    // Put your database disconnection here. e.g.
     await mongoose.disconnect()
   }
 }))
