@@ -5,11 +5,11 @@
 <strong>BOOK iT!</strong>
 ======
 
->An App for Professional Performing Artists Navigating the Busy Process of Auditioning 
-
-
+ <strong>An App for Professional Performing Artists Navigating the Busy Process of Auditioning</strong> 
+<br>
+<br>
 ## <strong>BookIt</strong> allows performance industry professionals to:
-<hr>
+
 <br>
 
 >👉 create a detailed contact list of industry professionals who they've met and auditioned for. <br>
