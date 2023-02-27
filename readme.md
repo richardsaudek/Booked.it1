@@ -8,19 +8,6 @@
 >An App for Professional Performing Artists Navigating the Busy Process of Auditioning 
 
 
-
-### Table of Contents:
-**[API](#api)**<br>
-**[MVP](#mvp)**<br>
-**[Post- MVP](#post-mvp)**<br>
-**[Goals](#goals)**<br>
-**[Routing Table](#routing-table)**<br>
-**[Data Model](#data-model)**<br>
-**[Schema](#schema)**<br>
-<br>
-
-
-
 ## <strong>BookIt</strong> allows performance industry professionals to:
 <hr>
 <br>
@@ -33,20 +20,31 @@
 <br>
 <br>
 
+
+### Table of Contents:
+**[API](#api)**<br>
+**[MVP](#mvp)**<br>
+**[Post- MVP](#post-mvp)**<br>
+**[Goals](#goals)**<br>
+**[Routing Table](#routing-table)**<br>
+**[Data Model](#data-model)**<br>
+**[Schema](#schema)**<br>
+<br>
+
 ## API: 
-***
+
 I'm making some sample JSON models, but in the final product, the user will generate the API themselves.
 <br>
 <br>
 
 ## MVP:
-***
+
 - [x] Build a JSON API using Mongoose and Express
 - [x] Achieve complete CRUD functionality implemented with RESTful routes
 - [ ] Deploy via Vercel 
 
 ## Post MVP:
-***
+
 - [ ] Design a frontend
 - [ ] Add user authentication
 - [ ] Create ability to upload headshots
@@ -54,7 +52,7 @@ I'm making some sample JSON models, but in the final product, the user will gene
 
 
 ## Goals:
-***
+
 - [x] Create model for Audtions
 - [x] Complete CRUD funtionality with RESTful routes
   - [x] GET function to index all submissions
@@ -65,7 +63,7 @@ I'm making some sample JSON models, but in the final product, the user will gene
 <br>
 
 ## Routing Table:
-***
+
 | Route                         | HTTP Method | DB Action | Description                 |
 | ----------------------------- | ----------- | --------- | --------------------------- |
 | /api/models/Audition_Info/:id | GET         | INDEX     | Indexes all the submissions |
@@ -74,14 +72,14 @@ I'm making some sample JSON models, but in the final product, the user will gene
 | /api/models/Audition_Info/:id | PATCH       | UPDATE    | Update a submission         |
 | /api/models/Audition_Info/:id | DELETE      | DELETE    | Delete a submission         |
 ## Data Model:
-***
+
 <p align="center">
 
 <img src="https://github.com/richardsaudek/Booked.it1/blob/046c00cc8e7a508a5b381a0f9c8a87718730de91/project2%20wire.png?raw=true" alt="BookIt's data model"/>
 </p>
 
 ## Schema:
-***
+
 
 
 ```var s = "JavaScript syntax highlighting";
@@ -100,3 +98,4 @@ const auditionSchema = new mongoose.Schema(
   }
 )
 export default mongoose.model('Audition', auditionSchema)```
+
