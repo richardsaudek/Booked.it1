@@ -10,7 +10,6 @@
 
 
 ### Table of Contents:
-**[Description](#description)**<br>
 **[API](#api)**<br>
 **[MVP](#mvp)**<br>
 **[Post- MVP](#post-mvp)**<br>
@@ -21,13 +20,12 @@
 <br>
 
 
-# Description
 
-### <strong>BookIt</strong> allows industry professionals to:
+## <strong>BookIt</strong> allows performance industry professionals to:
+<hr>
 <br>
 
 >👉 create a detailed contact list of industry professionals who they've met and auditioned for. <br>
-<hr>
 
 >👉 keep track of past and upcoming appointments noting the date and location of the audition as well as who was in the room so that the artist can follow up with the right people to maintain professional relationships. <br>
 
