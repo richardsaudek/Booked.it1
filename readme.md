@@ -41,7 +41,9 @@ I'm making some sample JSON models, but in the final product, the user will gene
 
 - [x] Build a JSON API using Mongoose and Express
 - [x] Achieve complete CRUD functionality implemented with RESTful routes
-- [ ] Deploy via Vercel 
+- [x] Deploy via Vercel 
+- [Check it out!](https://booked-it.vercel.app/)
+
 
 ## Post MVP:
 
@@ -98,4 +100,6 @@ const auditionSchema = new mongoose.Schema(
   }
 )
 export default mongoose.model('Audition', auditionSchema)```
+
+
 

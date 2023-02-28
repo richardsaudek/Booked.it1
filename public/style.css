@@ -1,77 +1,195 @@
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+
 }
 @import 'https://fonts.googleapis.com/css?family=BioRhyme:700|Eczar:800|Rubik:400,400i,700';
 @media screen and (max-width: 950px) {
   .bookBox {
-    background: rgb(242, 243, 245);
+    background: #f8f1e9;
     min-width: 350px;
     }
 }
+.line {
+  border-bottom: 5px solid #a8a39d
+  margin-top: 5px;
+  width: 100%;
+  align: center;
+}
+.span {
+  text-decoration-color: #a8a39d;
+}
+  label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type=text],
+input[type=email] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8d7966;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
 header{
   align-items: center;
   height: 550px;
 }
 body {
-  background-image: url("thought-catalog-o0Qqw21-0NI-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  height: 100vh;
-  width: 100vw;
-  background-color:  #fcfce1;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background-color:  #c6cca5;
   font-family: Rubik, sans-serif;
   font-weight: 400;
   align-items: center;
-  /* padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px; */
-
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-image: url("denise-jans-OaVJQZ-nFD0-unsplash.jpg");
+  
+}
+p {
+  color: #615145;
 }
 #logo{
   align-items: center;
 }
-button {
-  display: flex;
-  align-items: center;
-  color: #000;
-  background: none;
-  border: none;
-  padding: 12px 18px;
-  position: relative;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: monospace;
-  transition: linear .3s;
-  align-items: center;
-}
 
-button:hover {
-  color: #fff;
-}
 
-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateX(calc(100% + 4px));
-  width: 45px;
-  height: 45px;
-  background-color: #c5dc14;
-  border-radius: 50px;
-  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
-  z-index: -1;
-}
-
-button:hover::before {
-  width: 100%;
-  transform: translateY(-50%) translateX(-18px);
-  transition: transform .25s cubic-bezier(0,0,.5,2);
-}
 label: {
   padding: auto;
 }
-///////////////////////
+
+html, body {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+
+min-height: 100%;
+}
+body, div, form, input, select, textarea, p { 
+margin: 0;
+outline: none;
+font-family: Rubik, sans-serif;
+font-size: 14px;
+color: #615145;
+line-height: 22px;
+}
+h2 {
+  /* position: absolute;
+align-items: center;
+align-content: center; */
+text-align: center;
+margin: 0;
+font-size: 20px;
+color: #615145;
+z-index: 2;
+padding-bottom: 20px;
+line-height: 30px;
+}
+h1 {
+text-align: center;
+margin: 0;
+font-size: 25px;
+color: #615145;
+z-index: 2;
+padding-bottom: 20px;
+line-height: 30px;
+
+}
+
+.testbox {
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+margin: 0 auto;
+/* padding: 20px; */
+}
+form {
+width: 100%;
+padding: 20px 40px;
+border-radius: 6px;
+background: #fff;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.banner {
+margin-top: 45px;
+position: relative;
+height: 210px;
+/* background-image: url("/uploads/media/default/0001/02/8ca4045044162379597641472fa0bb5489ba418f.jpeg");      background-size: cover; */
+background-image: img id="logo" src="https://user-images.githubusercontent.com/123023398/221219765-2fb1ffcd-f91a-46c5-87e3-581fdf2eb0af.png?raw=true" alt="BookIt's custom image";
+/* background-size: cover; */
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.banner::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+}
+input, textarea, select {
+  margin-bottom: 10px;
+border: 1px solid #c6cca5;
+border-radius: 3px;
+}
+input {
+width: calc(100% - 10px);
+padding: 5px;
+}
+select {
+width: 100%;
+padding: 7px 0;
+background: transparent;
+}
+textarea {
+  width: calc(100% - 12px);
+padding: 5px;
+}
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+color: #a82877;
+}
+.item input:hover, .item select:hover, .item textarea:hover {
+border: 1px solid transparent;
+box-shadow: 0 0 6px 0 #a82877;
+color: #a82877;
+}
+.item {
+position: relative;
+margin: 10px 0;
+}
+input[type="date"]::-webkit-inner-spin-button {
+display: none;
+}
+.item i, input[type="date"]::-webkit-calendar-picker-indicator {
+position: absolute;
+font-size: 20px;
+color: #54787d;
+}
+.item i {
+right: 1%;
+top: 30px;
+z-index: 1;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+right: 0;
+z-index: 2;
+opacity: 0;
+cursor: pointer;
+border color: #615145;
+
+}
