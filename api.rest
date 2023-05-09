@@ -38,7 +38,7 @@ Content-Type: application/json
   }
 ###
 
-DELETE {{baseUrl}}/
+DELETE {{baseUrl}}/63fe0d27dbb557ad1659533d
 Content-Type: application/json 
 
 ###

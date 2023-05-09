@@ -1,111 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Booked It</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book It!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .input-group {
+      width: 45%;
+    }
+  </style>
+</head>
+<body>
+  <form class="signup-form">
+    <div class="form-header">
+      <img src="book-it.png" alt="Book It logo">
+      <h1>Be prepared, be kind, be creative...<br> But most importantly: Show up!</h1>
+    </div>
+    <div class="form-body">
+      <div class="row">
+        <div class="input-group">
+          <label>Production Title</label>
+          <input type="text" />
+        </div>
+      </div>
 
-  </head>
-  <body>
-    <div class="container">
-      <form action="/">
-        <div class="banner">
-          <img
-            id="logo"
-            src="https://user-images.githubusercontent.com/123023398/221219765-2fb1ffcd-f91a-46c5-87e3-581fdf2eb0af.png?raw=true"
-            alt="BookIt's custom image"
-          />
+      <div class="row">
+        <div class="input-group">
+          <label>Date of Audition</label>
+          <input type="date" />
         </div>
-        <div class="h2">
-          <h2>
-            Be prepared, be kind, be creative, <br />
-            but most importantly: <br />
-          </h2>
-            <h1>Show up.</h1>
+        <div class="input-group">
+          <label>Time of Audition</label>
+          <input type="time" />
         </div>
-        <div class="line"></div>
-        <div class="form-group">
-          <label for="production-title">Production Title</label>
-          <input type="text" id="name_of_project" name="name_of_project" />
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label>Type of Project
+            <select id="type_of_project" name="type_of_project">
+              <option value="">Please select</option>
+              <option value="Theater">Theater</option>
+              <option value="Film">Film</option>
+              <option value="TV Series">TV Series</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Other Digital Media">Other Digital Media</option>
+            </select>
+          </label>
         </div>
-        <div class="form-group">
-          <label for="audition-date">Date of Audition</label>
-          <div class="input-group">
-            <input type="date" id="date" name="date" />
-            <i class="fas fa-calendar-alt"></i>
+        <div class="input-group">
+          <label>Union Status</label>
+          <div class="radio-group">
+            <div> 
+              <label><input type="radio" name ="union-status"/><label> SAG/AFTRA</label>
+            </div>
+            <div>              
+              <label><input type="radio" name ="union-status"/><label> AEA</label>
+            </div>
+            <div>              
+              <label><input type="radio" name ="union-status"/><label> Non-Union</label>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="audition-time">Time of Audition</label>
-          <div class="input-group">
-            <input type="time" id="audition-time" name="audition-time" />
-            <i class="fas fa-clock"></i>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <label>Audition Location</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <input type="text" placeholder="Street" style="width: 100%;" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <div class="address-input-group">
+            <div class="row" style="padding-top: 10px;">
+              <input type="text" placeholder="City" style="width: 60%; margin-right: 10px;" />
+              <input type="text" placeholder="State" style="width: 20%; margin-right: 10px;" />
+              <input type="text" placeholder="Zip" style="width: 20%;" />
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="project-type">Type of Project</label>
-          <select id="type_of_project" name="type_of_project">
-            <option value="">Please select</option>
-            <option value="Theater">Theater</option>
-            <option value="Film">Film</option>
-            <option value="TV Series">TV Series</option>
-            <option value="Commercial">Commercial</option>
-            <option value="Other Digital Media">Other Digital Media</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="audition-location">Audition Location</label>
-          <input
-            type="text"
-            id="location"
-            name="location"
-            placeholder="Street address"
-          />
-          <div class="form-group">
-            <label for="union_status">Union Status</label>
-            <input
-              type="boolean"
-              id="union_status"
-              name="union_status"
-            />
-            <div class="form-group">
-              <label for="casting_office">Casting Office</label>
-              <input
-                type="text"
-                id="casting_office"
-                name="casting_office"
-                placeholder="Enter Casting Office"
-              />
-              <div class="form-group">
-                <label for="casting_dir">Casting Director</label>
-                <input
-                  type="text"
-                  id="casting_dir"
-                  name="casting_dir"
-                  placeholder="Enter Casting Director"
-                />
-                <div class="form-group">
-                  <label for="casting_associate">Casting Associate</label>
-                  <input
-                    type="text"
-                    id="casting_associate"
-                    name="casting_associate"
-                    placeholder="Enter Casting Associate"
-                  />
-                <div class="item">
-                      <p>What to Prepare:</p>
-                      <textarea rows="3" >
-                      </textarea>
-                    </div>
-                    <div class="item">
-                      <p>Post-Audition Notes:</p>
-                      <textarea rows="3" >
-                      </textarea>
-                    </div>
-                    
+          
+
+          <div class="casting-input-group">
+            <div class="row" style="display: flex; justify-content: space-between;">
+              <div class="input-group">
+                <label>Casting Director</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label>Casting Office</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label>Casting Associate</label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          
+          
+      </div>
+      
+
+<div class="row">
+ 
+</div>
+  </form>
+</body>
+</html>
