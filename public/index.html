@@ -1,119 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book It!</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .row {
-      display: flex;
-      justify-content: space-between;
-    }
-    .input-group {
-      width: 45%;
-    }
-  </style>
-</head>
-<body>
-  <form class="signup-form">
-    <div class="form-header">
-      <img src="book-it.png" alt="Book It logo">
-      <h1>Be prepared, be kind, be creative...<br> But most importantly: Show up!</h1>
-    </div>
-    <div class="form-body">
-      <div class="row">
-        <div class="input-group">
-          <label>Production Title</label>
-          <input type="text" />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-group">
-          <label>Date of Audition</label>
-          <input type="date" />
-        </div>
-        <div class="input-group">
-          <label>Time of Audition</label>
-          <input type="time" />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-group">
-          <label>Type of Project
-            <select id="type_of_project" name="type_of_project">
-              <option value="">Please select</option>
-              <option value="Theater">Theater</option>
-              <option value="Film">Film</option>
-              <option value="TV Series">TV Series</option>
-              <option value="Commercial">Commercial</option>
-              <option value="Other Digital Media">Other Digital Media</option>
-            </select>
-          </label>
-        </div>
-        <div class="input-group">
-          <label>Union Status</label>
-          <div class="radio-group">
-            <div> 
-              <label><input type="radio" name ="union-status"/><label> SAG/AFTRA</label>
-            </div>
-            <div>              
-              <label><input type="radio" name ="union-status"/><label> AEA</label>
-            </div>
-            <div>              
-              <label><input type="radio" name ="union-status"/><label> Non-Union</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-group">
-          <label>Audition Location</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-group">
-          <input type="text" placeholder="Street" style="width: 100%;" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-group">
-          <div class="address-input-group">
-            <div class="row" style="padding-top: 10px;">
-              <input type="text" placeholder="City" style="width: 60%; margin-right: 10px;" />
-              <input type="text" placeholder="State" style="width: 20%; margin-right: 10px;" />
-              <input type="text" placeholder="Zip" style="width: 20%;" />
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book It!</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <div class="container">
+      <img src="book-it.png" alt="Book It logo"/>
+      <form class="signup-form">
+        <div class="form-header">
+            <h1>Be prepared, be kind, be creative...<br>  But most importantly: <span>Show up!</span></h1>
           </div>
           
-
-          <div class="casting-input-group">
-            <div class="row" style="display: flex; justify-content: space-between;">
+          <div class="form-body">
+            <div class="row">
               <div class="input-group">
-                <label>Casting Director</label>
-                <input type="text" />
-              </div>
-              <div class="input-group">
-                <label>Casting Office</label>
-                <input type="text" />
-              </div>
-              <div class="input-group">
-                <label>Casting Associate</label>
-                <input type="text" />
-              </div>
+                <label>Production Title</label>
+                <hr class="separator separator--line"/>
+              <input type="text" />
             </div>
           </div>
-          
-          
-      </div>
+          <div class="input-group">
+            <label>Type of Project
+              <hr class="separator separator--line"/>
+
+              <select id="type_of_project" name="type_of_project">
+                <option value="">Please select</option>
+                <option value="Theater">Theater</option>
+                <option value="Film">Film</option>
+                <option value="TV Series">TV Series</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Other Digital Media">Other Digital Media</option>
+              </select>
+            </label>
+          </div>
+
+     
+          <div class="row">
+
+            <div class="input-group">
+              <label>Date of Audition</label>
+              <hr class="separator separator--line"/>
+
+              <input type="date" />
+            </div>
+            <div class="input-group">
+              <label>Time of Audition</label>
+              <hr class="separator separator--line"/>
+
+              <input type="time" />
+            </div>
+          </div>
       
+          
+      
+          <div class="row">
 
-<div class="row">
- 
-</div>
-  </form>
-</body>
-</html>
+            <div class="input-group">
+              <label>Union Status</label>
+              <hr class="separator separator--line"/>
+
+              <div class="radio-group">
+                <div> 
+                  <label><input type="radio" name ="union-status"/><label> SAG/AFTRA</label>
+                </div>
+                <div>              
+                  <label><input type="radio" name ="union-status"/><label> AEA</label>
+                </div>
+                <div>              
+                  <label><input type="radio" name ="union-status"/><label> Non-Union</label>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      
+      
+      
+          <div class="row">
+
+            <div class="input-group">
+              <label> Location</label>
+              <hr/>
+
+            </div>
+          </div>
+      
+         
+      
+      
+          <div class="row">
+            <div class="input-group">
+              <input type="text" placeholder="Street" style="width: 100%;" />
+            </div>
+          </div>
+      
+          
+      
+      
+          <div class="row">
+            <div class="input-group">
+              <div class="address-input-group">
+                <div class="row" style="padding-top: 10px;">
+                  <input type="text" placeholder="City" style="width: 60%; margin-right: 10px;" />
+                  <input type="text" placeholder="State" style="width: 20%; margin-right: 10px;" />
+                  <input type="text" placeholder="Zip" style="width: 20%;" />
+                </div>
+              </div>
+          
+      
+      
+              <div class="casting-input-group">
+                <div class="row" style="display: flex; justify-content: space-between;">
+
+                  <div class="input-group">
+                    <label>Casting Director</label>
+                    <hr/>
+
+                    <input type="text" />
+                  </div>
+                  <div class="input-group">
+                    <label>Casting Office</label>
+                    <hr/>
+
+                    <input type="text" />
+                  </div>
+                  <div class="input-group">
+                    <label>Casting Associate</label>
+                    <hr/>
+
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <label for="prepare-input">What to Prepare</label>
+                  <hr/>
+                  <input type="text" id="prepare-input" placeholder="What to prepare" />
+                </div>
+              </div>
+        
+              <div class="row">
+                <div class="input-group">
+                  <label>How did it go?</label>
+              
+                  <div class="range-group">
+                    <input type="range" min="1" max="10" step="1" id="range-slider" onchange="changeSliderValue(this.value)" />
+                    <label id="range-label">&#128528;</label>
+                  </div>
+                </div>
+              </div>
+              
+        
+              <div class="row">
+                <div class="input-group">
+                  <label for="post-aud-input">Post-Audition Notes</label>
+                  <hr/>
+                  <input type="text" id="post-aud-input" placeholder="Post-Audition Notes" />
+                </div>
+              </div>
+        
+            </div>
+          </form>
+          <script>
+            const changeSliderValue = (value) => {
+              const rangeLabel = document.getElementById("range-label");
+              let emoji = "&#128577;"; // Very unhappy 
+        
+              if (value >= 9) {
+
+                emoji ="&#128526;"; //Cool
+
+              } else if (value >= 8) {
+                emoji = "&#128512;"; // Very happy 
+              } else if (value >= 7) {
+                emoji = "&#128522;"; // Happy 
+
+              } else if (value >= 6) {
+                emoji = "&#128528;"; // Slightly smiling 
+
+              } else if (value >= 5) {
+                emoji = "&#128528;"; // Neutral 
+
+              } else if (value >= 4) {
+                emoji = "&#128533;"; // Confused 
+
+              } else if (value >= 3) {
+                emoji = "&#128542;"; // Slightly unhappy 
+
+              } else if (value >= 2) {
+                emoji = "&#128542;"; // Slightly unhappy 
+
+
+              } else if (value >= 1) {
+                emoji = "&#128577;"; // Slightly frowning
+              }
+        
+              rangeLabel.innerHTML = emoji;
+            }
+         window.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.container');
+  const logo = document.querySelector('.container img');
+  const form = document.querySelector('.signup-form');
+
+  // Center the logo initially
+  const containerWidth = container.offsetWidth;
+  const logoWidth = logo.offsetWidth;
+  const leftOffset = (containerWidth - logoWidth) / 2;
+  logo.style.left = leftOffset + 'px';
+
+  // Animation to open the form
+  setTimeout(function() {
+    logo.style.animationName = 'bounce';
+    logo.style.animationDuration = '0.5s';
+    logo.style.animationIterationCount = 'infinite';
+    logo.style.animationTimingFunction = 'linear';
+
+    setTimeout(function() {
+      logo.classList.add('opened');
+      form.classList.add('opened');
+      logo.style.animationName = 'none';
+    }, 2000);
+  }, 2000);
+});
+
+
+            
+          </script>
+        </div>
+        </body>
+        </html>
