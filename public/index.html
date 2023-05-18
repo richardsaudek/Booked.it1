@@ -1,195 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book It!</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book It!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form class="signup-form">
+      <div class="form-header">
+        <div class="image-container">
+          <label id="range-label" class="emoji">
+            <img src="/public/book-it-neutral.png" alt="Neutral Mask Hotel">
+          </label>
+        </div>
+      </div>
 
-  </head>
-  <body>
-    <div class="container">
-      <form class="signup-form">
-        <div class="form-header">
-          <img src="book-it.png" alt="Book It logo" class="logo-image" />
-            <h1>Be prepared, be kind, be creative...<br>  But most importantly: <span>Show up!</span></h1>
+      <div class="form-body">
+        <div class="row">
+          <div class="input-group">
+            <label for="production_title">Name of Project:</label>
+            <div class="input-container">
+              <input type="text" />
+            </div>
           </div>
-          
-          <div class="form-body">
-                <div class="row">
-                  <div class="input-group">
-                    <label for="production_title">
-                       Name of Project:</label>
-                    <hr class="separator separator--line"/>
-                    <input type="text" id="production_title" name="production_title" />
-                  </div>
-                  <div class="input-group">
-                    <label for="type_of_project">
-                      <i class="fas fa-theater-masks"></i>
-                      </label>
-                    <hr class="separator separator--line"/>
-                    <select id="type_of_project" name="type_of_project">
-                      <option value="">Type of Project</option>
-                      <option value="Theater">Theater</option>
-                      <option value="Film">Film</option>
-                      <option value="TV Series">TV Series</option>
-                      <option value="Commercial">Commercial</option>
-                      <option value="Other Digital Media">Other Digital Media</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-group">
+          <div class="input-group">
+            <label for="type_of_project">
+              <i class="fas fa-theater-masks"></i> What is it?
+            </label>
+            <select id="type_of_project" name="type_of_project">
+              <option value="" class="custom-input">Type of Project</option>
+              <option value="Theater">Theater</option>
+              <option value="Film">Film</option>
+              <option value="TV Series">TV Series</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Other Digital Media">Other Digital Media</option>
+            </select>
+          </div>
+        </div>
 
-                    <label>     </i>
-                      <i class="fas fa-clock"></i>
-                      </label>
-   
-                    <hr class="separator separator--line"/>
-                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-                  </div>
-                  
-                  <div class="input-group">
-                    <label> 
-                      <i class="fas fa-id-card"></i>
-                      </label>
-                    <hr class="separator separator--line"/>
-                    <div class="wrapper">
-                      <div class="option">
-                        <input class="input" type="radio" name="btn" value="option1" checked>
-                        <div class="btn">
-                              <span class="span"> Union</span>
-                            </div>  
-                          </div>
-                        <div class="option">
-                          <input class="input" type="radio" name="btn" value="option2">
-                          <div class="btn">
-                            <span class="span"> Non-Union</span>
-                          </div>  
-                        </div>
-                      </div>
-                    </div>
-                  </div>  
-                </div>
-                
-                <div class="input-group">
-                  <label> <i class="fas fa-map-marker-alt"></i>
-                   Location</label>
-                  <hr class="separator separator--line"/>
-                </div>
-              <div class="row">
-
-         
-                                
-              </div>
-              <div class="row">
-                <div class="input-group">
-                  <label>How did it go?</label>
-                  <div class="range-group">
-                    <input type="range" min="1" max="10" step="1" id="range-slider" value="5" onchange="changeSliderValue(this.value)" />
-                    <label id="range-label" class="emoji-label"></label>
-                  </div>
+        <div class="row">
+          <div class="input-group">
+            <label><i class="fas fa-clock"></i>When is it?</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </div>
+          <div class="input-group">
+            <label>
+              <i class="fas fa-id-card"></i>Is it union?
+            </label>
+            <div class="wrapper">
+              <div class="option">
+                <input class="input" type="radio" name="btn" value="option1" checked>
+                <div class="btn">
+                  <span class="span">SAG</span>
                 </div>
               </div>
-              <div class="casting-input-group">
-                <div class="row" style="display: flex; justify-content: space-between;">
-                  <div class="input-group">
-                    <label>Casting Director</label>
-                    <hr class="separator separator--line"/>
-
-
-                    <input type="text" />
-                  </div>
-                  <div class="input-group">
-                    <label>Casting Office</label>
-                    <hr class="separator separator--line"/>
-
-
-                    <input type="text" />
-                  </div>
-                  <div class="input-group">
-                    <label>Casting Associate</label>
-                    <hr class="separator separator--line"/>
-
-
-                    <input type="text" />
-                  </div>
+              <div class="option">
+                <input class="input" type="radio" name="btn" value="option2">
+                <div class="btn">
+                  <span class="span">AEA</span>
                 </div>
               </div>
+              <div class="option">
+                <input class="input" type="radio" name="btn" value="option3">
+                <div class="btn">
+                  <span class="span">N/A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label>
+              <i class="fas fa-map-marker-alt"></i>Location
+            </label>
+            <div class="location-container">
+              <input type="text" id="production_title" name="production_title" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>How did it go?</label>
+            <label class="thumbs">
+              <i              class="fas fa-thumbs-up"></i>
+              <span id="slider-container"></span>
+              <input type="range" min="1" max="10" step="1" id="range-slider" value="5" onchange="changeSliderValue(this.value)" />
+              <i class="fas fa-thumbs-down"></i>
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group">
+            <label for="prepare-input">
+              <i class="fas fa-pencil-alt"></i> Take Notes!
+            </label>            <div class="input-group">
               
-              <div class="row">
-                <div class="input-group">
-                  <label for="post-aud-input">Post-Audition Notes</label>
-                                      <hr class="separator separator--line"/>
-
-                  <input type="text" id="post-aud-input" placeholder="Post-Audition Notes" />
+            </div>
+            <input type="textarea" id="prepare-input" placeholder="What to prepare?" class="custom-input" />
+            <input type="file" id="upload-input" multiple accept=".pdf" class="custom-input" />
+                  </div>
+                  <input type="text" id="post-aud-input" placeholder="Post-audition notes" class="custom-input" />
                 </div>
-              </div>
-              
-            </form>
-            <button class="image-button"></button>
-              
-   
-          <script>
-            const changeSliderValue = (value) => {
-              const rangeLabel = document.getElementById("range-label");
-              let emoji = "<img src='/public/neutralrunning.png' alt='Neutral Mask Hotel'>"; // Initial image
-            
-              // Replace the emoji variable assignments with the correct image URLs based on the slider value
-              if (value >= 9) {
-                emoji = "<img src='/public/happiestrunning (1).png' alt='Happiest Mask'>";
-              } else if (value >= 8) {
-                emoji = "<img src='/public/happyrunning.png' alt='Happy Mask'>";
-              } else if (value >= 7) {
-                emoji = "<img src='/public/neutralrunning.png' alt='Neutral Mask Hotel'>";
-              } else if (value >= 6) {
-                emoji = "<img src='/public/ehrunning (1).png' alt='eh Mask '>";
-              } else if (value >= 5) {
-                emoji = "<img src='/public/sortasadrunning.png' alt='Sorta Sad Mask '>";
-              } else if (value >= 4) {
-                emoji = "<img src='/public/sadrunning.png' alt='Sad Mask '>";
-              } else if (value >= 3) {
-                emoji = "<img src='/public/slightlysadrunning.png' alt='Slightly Sad Mask '>";
-              } else if (value >= 2) {
-                emoji = "<img src='/public/cryingrunning.png' alt='Crying Mask '>";
-              } else if (value >= 1) {
-                emoji = "<img src='/public/madrunning.png' alt='Mad Mask '>";
-              }
-            
-              rangeLabel.innerHTML = emoji;
-            };
-            
-         window.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.container');
-  const logo = document.querySelector('.container img');
-  const form = document.querySelector('.signup-form');
-  
-  // Center the logo initially
-  const containerWidth = container.offsetWidth;
-  const logoWidth = logo.offsetWidth;
-  const leftOffset = (containerWidth - logoWidth) / 2;
-  logo.style.left = leftOffset + 'px';
 
-  // Animation to open the form
-  setTimeout(function() {
-    logo.style.animationName = 'bounce';
-    logo.style.animationDuration = '0.5s';
-    logo.style.animationIterationCount = 'infinite';
-    logo.style.animationTimingFunction = 'linear';
-    
-    setTimeout(function() {
-      logo.classList.add('opened');
-      form.classList.add('opened');
-      logo.style.animationName = 'none';
-    }, 2000);
-  }, 2000);
-});
-
-
-
-</script>
-</div>
+        <div class="row">
+          <div class="input-group">
+            <label>
+              <i class="fas fa-user"></i>
+              Casting Director
+            </label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label>
+              <i class="fas fa-building"></i>
+              Casting Office
+            </label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label>
+              <i class="fas fa-user-friends"></i>
+              Casting Associate
+            </label>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <button class="image-button"></button>
+  </div>
 </body>
-        </html>
+</html>
+
