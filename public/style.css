@@ -534,7 +534,9 @@ img {
 
 label {
   display: flex;
-text-transform:calc();
+padding-bottom: 5px;
+text-transform: capitalize;
+
 }
 
 .custom-input::placeholder {
