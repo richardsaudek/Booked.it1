@@ -9,7 +9,7 @@
     } else if (value >= 7) {
       emoji = "<img class='image' src='/public/book-it-eh.png' alt='Neutral Mask Hotel'>";
     } else if (value >= 6) {
-      emoji = "<img class='image' src='/public/book-it-eh.png' alt='eh Mask' class= 'emoji'>";
+      emoji = "<img class='image' src='/public/book-it-neutral.png' alt='Sorta Sad Mask' class='emoji'>";
     } else if (value >= 5) {
       emoji = "<img class='image' src='/public/book-it-neutral.png' alt='Sorta Sad Mask' class='emoji'>";
     } else if (value >= 4) {

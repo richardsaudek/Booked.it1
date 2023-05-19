@@ -549,3 +549,14 @@ text-transform: capitalize;
   color: #931BBA;
 }
 
+.casting-row{
+      display: flex;
+    justify-content: space-between;
+
+  
+  .input-group {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as desired */
+  }
+  
+}
